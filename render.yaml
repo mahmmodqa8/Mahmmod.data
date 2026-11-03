@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: universal-telegram-bot-24-7
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python telegram_bot.py"
+    envVars:
+      - key: TG_BOT_TOKEN
+        value: "8964192076:AAHTY7fq2CSDWxgmBexPkRA4oAAbdzv1Xoo"
+      - key: PORT
+        value: "8080"
